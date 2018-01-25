@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Navbar</title>
+	<link rel="stylesheet" type="text/css" href="../styles/style.css">
+</head>
+<body>
+	<nav>
+		<div class="toggle">
+			<h2><a href="#">Mattress Man</a> 
+			<i id="toggle" class="fa fa-bars icons" aria-hidden="true" style="font-size: 30px;"></i> 
+ 			<a href="#"><i class="fa fa-user-circle icons" aria-hidden="true" id="toggle" style="font-size: 30px;"></i></a>
+ 			<a href="#"><i class="fa fa-shopping-cart icons" aria-hidden="true" style="font-size: 30px;"></i></a>
+			</h2>
+		</div>
+		<h1 class="brand"><a href="#">Mattress Man</a></h1>
+		<ul class="hide">	
+			<li><a href="#">Beds</a></li>
+			<li class="standard"><a href="#">Register</a></li>
+			<li class="standard"><a href="#">Login</a></li>
+		</ul>
+		<div style="clear: both;"></div>
+	</nav>
+
+	<script src="https://use.fontawesome.com/e3c6915189.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript">
+		$('#toggle').click(function(){
+			$('nav ul').slideToggle(500);
+		});
+	</script>
+</body>
+</html>

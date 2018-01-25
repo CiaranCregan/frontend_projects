@@ -1,0 +1,270 @@
+/* DEFAULT CSS */
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+.container{
+	width: 100%;
+	margin: 0 auto;
+	padding: 20px 0;
+	align: center;
+}
+.inside-container{
+	width: 90%;
+	margin: 0 auto;
+}
+h1, h2, h3, h4, h5, h6, p{
+	margin: 0;
+}
+.text-center{
+	text-align: center;
+}
+.hr{
+	width: 90%;
+}
+
+/* CUSTOM STYLES */
+.bad{
+	text-decoration: line-through;
+}
+
+/* BACKGROUND COLOR CLASSES */
+#bg-grey{
+	background: #F7F7F7;
+}
+.red{
+	color: red;
+}
+
+/* COLUMS CLASSES */
+.col-1{
+	width: 95%;
+	padding: 5px;
+	margin: 0 16px;
+}
+.col-2{
+	width: 45%;
+	padding: 20px;
+	margin: 0 8px;
+	display: inline-block;
+}
+.col-3{
+	width: 30%;
+	padding: 10px;
+	margin: 0 8px;
+	display: inline-block;
+}
+.col-4{
+	width: 22.5%;
+	padding: 5px;
+	margin: 0 8px;
+	display: inline-block;
+}
+
+/* IMAGE CLASSES */
+.img {
+	width: 100%;
+}
+
+/* BUTTONS */
+.button{
+	text-align: center;
+	margin-top: 5px;
+	display: block;
+	border: 1px solid #800080;
+	border-radius: 10px;
+	text-decoration: none;
+	z-index: 1;
+}
+.button-main{
+	color: #fff;
+	background: #800080; 
+}
+.button-main:hover{
+	color: #000;
+	background: #fff;
+}
+.button-other{
+	color: #fff;
+	background: #000; 
+}
+.button-other:hover{
+	color: #000;
+	background: #fff;
+}
+.button-lg{
+	padding: 10px;
+}
+
+/* STANDARD NAVBAR */
+nav{
+	width: 100%;
+	background: #800080;
+	position: fixed;
+	box-sizing: border-box;
+}
+nav h1{
+	margin: 0;
+	padding: 10px 10px;
+	float: left;
+}
+nav h1 a{
+	color: #DCDCDC;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+nav ul{
+	float: right;
+	margin: 0;
+	padding: 0;
+}
+nav ul li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 15px 20px;
+}
+nav ul li:hover{
+	cursor: pointer;
+}
+nav ul li a{
+	color: #DCDCDC;
+	text-decoration: none;
+}
+
+/* RESPONSIVE NAVBAR */
+.toggle{
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	display: none;
+}
+.toggle h2{
+	margin: 0;
+	padding: 0;
+}
+.toggle h2 a{
+	text-decoration: none;
+	color: #DCDCDC;
+}
+i{
+	color: #DCDCDC;
+	cursor: pointer;
+}
+.icons {
+	float: right;
+	padding-left: 10px;
+}
+
+/* HERO SECTION */
+.hero-img{
+	width: 100%;
+	height: 500px; /* change height for responsivness to 400px*/
+	background-image: url(../images/hero-img.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding-top: 25px;
+	margin: 0;
+}
+.hero-heading h1{
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 10px 0;
+}
+.hero-heading p{
+	padding: 10px 0;
+}
+.hero-heading{
+	width: 500px; /* change width for responsivness to 300px*/
+	color: #fff;
+	background: #800080;
+	margin: 100px auto; /* change margin-top for responsivness to 75px*/
+	padding: 50px; /* change padding for responsivness to 25px*/
+	text-align: center;
+	border: 2px solid #222;
+	z-index: -1;
+}
+
+/* LINKS SECTION */
+.box{
+	background: #F7F7F7; 
+	border: 1px solid #F2F2F2;
+}
+.box-content{
+	margin: 5px;
+	padding: 30px;
+	display: inline-block;
+}
+.box-left{
+	padding: 20px 0 0 0;
+	float: left;
+}
+.box-right{
+	padding-left: 10px;
+	float: right;
+	font-size: 40px;
+}
+
+/* RESPONSIVE CSS FOR DEVICE LESS THAN 760px */
+@media only screen and (max-width: 760px) {
+    .brand{
+    	display: none;
+    }
+    nav ul{
+    	float: none;
+    	display: none;
+    	text-align: left;
+    	border-bottom: 1px solid black;
+    }
+    nav ul li {
+    	display: block;
+    	border-width: 100px;
+    }
+    nav ul li:hover{
+    	background: #BA55D3;
+    }
+    nav ul li:last-child{
+    	border-bottom: none;
+    }
+    .toggle{
+    	background: #800080;
+    	display: block;
+    	border-bottom: 1px solid black;
+    }
+    .standard{
+    	display: none;
+    }
+    .hero-img{
+    	height: 400px;
+    }
+    .hero-heading{
+    	width: 300px;
+    	margin: 75px auto;
+    	padding: 25px;
+    }
+    .col-4{
+		width: 45%;
+	}
+}
+
+/* RESPONSIVE CSS FOR DEVICE LESS THAN 405px */
+@media only screen and (max-width: 405px){
+	.hero-img{
+    	height: 300px;
+    }
+    .hero-heading{
+    	width: 250px;
+    	margin: 25px auto;
+    	padding: 15px;
+    }
+    .col-4{
+		width: 100%;
+		text-align: center;
+		margin: 0;
+		padding: 0 0 10px 0;
+	}
+    #button{
+    	display: none;
+    }
+}
