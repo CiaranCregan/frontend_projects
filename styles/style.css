@@ -5,14 +5,11 @@ body{
 	font-family: sans-serif;
 }
 .container{
-	width: 100%;
-	margin: 0 auto;
-	padding: 20px 0;
-	align: center;
+	padding: 0 15px;
 }
 .inside-container{
-	width: 90%;
-	margin: 0 auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 h1, h2, h3, h4, h5, h6, p{
 	margin: 0;
@@ -21,7 +18,7 @@ h1, h2, h3, h4, h5, h6, p{
 	text-align: center;
 }
 .hr{
-	width: 90%;
+	width: 45%;
 }
 
 /* CUSTOM STYLES */
@@ -39,26 +36,27 @@ h1, h2, h3, h4, h5, h6, p{
 
 /* COLUMS CLASSES */
 .col-1{
-	width: 95%;
-	padding: 5px;
-	margin: 0 16px;
+	width: 100%;
+	position: relative;
+	padding: 10px 0;
+	display: inline-block;
 }
 .col-2{
-	width: 45%;
-	padding: 20px;
-	margin: 0 8px;
+	width: 50%;
+	position: relative;
+	padding: 0 15px;
 	display: inline-block;
 }
 .col-3{
 	width: 30%;
-	padding: 10px;
-	margin: 0 8px;
+	position: relative;
+	padding: 10px 15px;
 	display: inline-block;
 }
 .col-4{
 	width: 22.5%;
-	padding: 5px;
-	margin: 0 8px;
+	position: relative;
+	padding: 0 15px;
 	display: inline-block;
 }
 
@@ -189,14 +187,14 @@ i{
 /* LINKS SECTION */
 .box{
 	background: #F7F7F7; 
-	border: 1px solid #F2F2F2;
+	border: 1px solid #000;
 }
 .box-content{
 	margin: 5px;
 	padding: 30px;
 	display: inline-block;
 }
-.box-left{
+.box-inner{
 	padding: 20px 0 0 0;
 	float: left;
 }
