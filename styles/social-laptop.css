@@ -17,6 +17,9 @@ main{
 	margin: 10px auto; /* Mobile = 0 */
 	display: flex;
 }
+@media(min-width: 800px){
+
+}
 .user, .people{
 	width: 315px;
 }
