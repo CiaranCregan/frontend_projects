@@ -14,6 +14,10 @@ body{
 h1, h2, h3, h4, h5, h6, p{
 	margin: 0;
 }
+a{
+	text-decoration: none;
+	color: #000;
+}
 .text-center{
 	text-align: center;
 }
@@ -204,7 +208,78 @@ i{
 	font-size: 40px;
 }
 
-/* RESPONSIVE CSS FOR DEVICE LESS THAN 760px */
+/* FORM SECTION */
+.background{
+	background: #fafafa;
+}
+.article{
+	margin: 0 auto;
+	max-width: 800px;
+}
+.one{
+	margin: 15px auto 0;
+	background: #fff;
+	max-width: 350px;
+	border: 1px solid #efefef;
+}
+.heading{
+	padding-top: 15px;
+	margin-bottom: 10px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 34px;
+}
+hr{
+	width: 200px;
+}
+form{
+	text-align: center;
+	display: block;
+}
+.form-one{
+	width: 100%;
+	/*text-align: center;*/
+}
+.form-one input{
+	background: #fafafa;
+	width: 258px;
+	margin: 5px auto;
+	padding: 2px;
+	border-radius: 2px;
+	border: 1px solid #efefef;
+	height: 36px;
+}
+.form-one input[type=submit]{
+	background: #3897f0;
+	border-color: #3897f0;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 600;
+	height: 26px;
+	width: 270px;
+	margin: 5px auto;
+	padding: 2px;
+	border-radius: 3px;
+}
+.form-one input:focus{
+	font-size: 16px;
+}
+.form-one-link{
+	text-decoration: none;
+	font-size: 12px;
+	color: #000;
+	display: inline-block;
+	margin: 12px 0 20px;
+}
+.one-heading{
+	font-size: 14px;
+	color: #000;
+	padding: 20px;
+	text-align: center;
+}
+.one-heading a{
+	color: #3897f0;
+/* RESPONSIVE CSS FOR DEVICE LESS THAN 760px 
 @media only screen and (max-width: 760px) {
     .brand{
     	display: none;
@@ -246,7 +321,7 @@ i{
 	}
 }
 
-/* RESPONSIVE CSS FOR DEVICE LESS THAN 405px */
+/* RESPONSIVE CSS FOR DEVICE LESS THAN 405px 
 @media only screen and (max-width: 405px){
 	.hero-img{
     	height: 300px;
